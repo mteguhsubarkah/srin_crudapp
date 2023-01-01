@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Mochamad Teguh Subarkah - SRIN Front End Simple Crud App (REACT)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+To run the project just simply run this command:
 
 ### `npm start`
 

@@ -58,7 +58,7 @@ function App() {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handelAddUser = (event) => {
     event.preventDefault();
     const firstName = document.getElementById("first-name").value;
     const lastName = document.getElementById("last-name").value;
@@ -90,7 +90,7 @@ function App() {
       <div class="columns" style={{ paddingLeft: "20px" }}>
         <div class="column">
           <h1>Create User</h1>
-          <form id="create-user-form" onSubmit={handleSubmit}>
+          <form id="create-user-form" onSubmit={handelAddUser}>
             <label for="first-name">First Name:</label>
             <br></br>
             <input type="text" id="first-name" name="first-name"></input>

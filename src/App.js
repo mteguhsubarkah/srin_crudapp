@@ -4,10 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 function App() {
   const [userList, setUserList] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
-  const [userListLoading, setUserListLoading] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
   const fetchUserList = async () => {
-    setUserListLoading(true);
     await fetch("http://localhost:8080/api/v1/users", {
       method: "GET",
       headers: {
@@ -19,7 +16,6 @@ function App() {
       .then((response) => {
         setUserList(response);
       });
-    setUserListLoading(false);
   };
 
   const addUser = async (newUser) => {
